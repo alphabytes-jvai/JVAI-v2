@@ -125,7 +125,7 @@ const AIModelDemo = () => {
     try {
       // Initialize Gemini API
       const response = await fetch(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDvjFz4v73aK-eqi07dcheeEji2-mvACic",
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.NEXT_PUBLIC_API_URL}`,
         {
           method: "POST",
           headers: {
