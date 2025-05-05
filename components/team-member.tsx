@@ -24,9 +24,9 @@ const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
         boxShadow: "0 10px 30px -10px rgba(0, 67, 248, 0.3)",
       }}
     >
-      <div className="relative h-64 overflow-hidden group">
+      <div className="relative h-[400px] overflow-hidden group">
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="h-full w-full relative">
-          <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover" />
+          <Image src={image || "/placeholder.svg"} alt={name} height={600} width={300} className="object-cover w-full " />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         </motion.div>
 

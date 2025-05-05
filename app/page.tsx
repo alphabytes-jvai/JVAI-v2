@@ -18,58 +18,108 @@ import {
   Clock,
   Cpu,
   Server,
-} from "lucide-react"
-import ParticleBackground from "@/components/particle-background"
-import AnimatedText from "@/components/animated-text"
-import { Button } from "@/components/ui/button"
-import AIModelDemo from "@/components/ai-model-demo"
-import FloatingElements from "@/components/floating-elements"
-import HeroAnimation from "@/components/hero-animation"
-import ProjectCard from "@/components/project-card"
-import TeamMember from "@/components/team-member"
-import ServiceCard from "@/components/service-card"
-import ContactForm from "@/components/contact-form"
-import AnimatedSection from "@/components/animated-section"
-import TestimonialCard from "@/components/testimonial-card"
-import FeatureHighlight from "@/components/feature-highlight"
-import TechnologyCard from "@/components/technology-card"
-import ProcessStep from "@/components/process-step"
-import ComparisonTable from "@/components/comparison-table"
-import IndustryCard from "@/components/industry-card"
-import ScrollingLogos from "@/components/scrolling-logos"
-import StatCard from "@/components/stat-card"
+} from "lucide-react";
+import ParticleBackground from "@/components/particle-background";
+import AnimatedText from "@/components/animated-text";
+import { Button } from "@/components/ui/button";
+import AIModelDemo from "@/components/ai-model-demo";
+import FloatingElements from "@/components/floating-elements";
+import HeroAnimation from "@/components/hero-animation";
+import ProjectCard from "@/components/project-card";
+import TeamMember from "@/components/team-member";
+import ServiceCard from "@/components/service-card";
+import ContactForm from "@/components/contact-form";
+import AnimatedSection from "@/components/animated-section";
+import TestimonialCard from "@/components/testimonial-card";
+import FeatureHighlight from "@/components/feature-highlight";
+import TechnologyCard from "@/components/technology-card";
+import ProcessStep from "@/components/process-step";
+import ComparisonTable from "@/components/comparison-table";
+import IndustryCard from "@/components/industry-card";
+import ScrollingLogos from "@/components/scrolling-logos";
+import StatCard from "@/components/stat-card";
+import Image from "next/image";
+import Teams from "@/components/Teams";
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
+  const textVariants = {
+    animate: {
+      transition: {
+        staggerChildren: 0.3, // Stagger child animations
+      },
+    },
+  };
+
+  const textItemVariants = {
+    initial: { opacity: 0, x: 20 }, // Start slightly to the right
+    animate: {
+      opacity: [0.7, 1, 0.7], // Continuous opacity pulse
+      x: [20, 0, 20], // Gentle slide back and forth
+      transition: {
+        duration: 4,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "loop",
+      },
+    },
+  };
+
   return (
     <main className="relative overflow-hidden">
       {/* Navigation Header */}
       <header className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-md z-50 py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <Brain className="h-8 w-8 mr-2 text-[#0043f8]" />
-              <span className="text-2xl font-bold text-white">Join Venture AI</span>
-            </div>
+            <Link href="/" className="flex items-center">
+              {/* <Brain className="h-8 w-8 mr-2 text-[#0043f8]" />
+              <span className="text-2xl font-bold text-white">
+                Join Venture AI
+              </span> */}
+              <Image width={150} height={150} src="/image.png" alt="logo" className="w-[150px]" />
+            </Link>
             <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#about"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 About
               </a>
-              <a href="#services" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#services"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Services
               </a>
-              <a href="#features" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#features"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Features
               </a>
-              <a href="#projects" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#projects"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Projects
               </a>
-              <a href="#team" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#team"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Team
               </a>
-              <a href="#testimonials" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#testimonials"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Testimonials
               </a>
-              <a href="#contact" className="text-gray-300 hover:text-[#0043f8] transition-colors">
+              <a
+                href="#contact"
+                className="text-gray-300 hover:text-[#0043f8] transition-colors"
+              >
                 Contact
               </a>
             </nav>
@@ -102,7 +152,9 @@ export default function Home() {
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
-              <Brain className="h-12 w-12 mr-2 text-[#0043f8] animate-pulse" />
+              {/* <Brain className="h-12 w-12 mr-2 text-[#0043f8] animate-pulse" /> */}
+              {/* <Image width={150} height={150} src="/image.png" alt="logo" className="w-[200px] h-[100px]" /> */}
+
               <h1 className="text-4xl md:text-6xl font-bold">
                 Join Venture <span className="text-[#0043f8]">AI</span>
               </h1>
@@ -112,16 +164,23 @@ export default function Home() {
               className="text-xl md:text-2xl mb-8 text-gray-200"
             />
             <p className="text-lg md:text-xl mb-12 text-gray-300">
-              Leverage the power of artificial intelligence to drive innovation, efficiency, and growth for your
-              business.
+              Leverage the power of artificial intelligence to drive innovation,
+              efficiency, and growth for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#0043f8] hover:bg-[#0036c5] text-white px-8 py-6 group">
-                Get Started <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-6">
+              <a href="#about">
+                <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white px-8 py-6 group">
+                  Explore Now{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+              {/* <Button
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white/10 px-8 py-6"
+              >
                 Book a Demo
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trusted By Section */}
@@ -131,11 +190,21 @@ export default function Home() {
             </div> */}
           </div>
         </div>
-        <a href="#about" className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+        <a
+          href="#team"
+          className="absolute bottom-10 cursor-pointer left-0 right-0 flex justify-center animate-bounce"
+        >
           <ChevronDown className="h-8 w-8 text-white/70" />
         </a>
       </section>
-
+      {/* <p
+        data-aos="fade-left"
+        data-aos-delay="3000"
+        data-aos-duration="1200"
+        className="mt-4 text-lg"
+      >
+        Intelligent Solutions for Your Business
+      </p>   */}
       {/* Key Stats Section - Redesigned */}
       <section className="py-16 bg-black relative">
         <div className="container mx-auto px-4">
@@ -178,29 +247,42 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <div className="relative">
-                <div className="w-full h-80 md:h-96 bg-gradient-to-br from-[#0043f8]/20 to-[#0043f8]/5 rounded-xl overflow-hidden">
+                {/* <div className="w-full h-80 md:h-96 bg-gradient-to-br from-[#0043f8]/20 to-[#0043f8]/5 rounded-xl overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <Brain className="h-32 w-32 text-[#0043f8] animate-pulse" />
                   </div>
-                </div>
+                </div> */}
+                <Image
+                  src="/about.jpg"
+                  alt="about"
+                  width={1000}
+                  height={900}
+                  className="rounded-l-xl"
+                ></Image>
                 <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#0043f8]/10 rounded-full blur-2xl"></div>
               </div>
             </div>
             <div className="lg:w-1/2">
               <div className="flex items-center mb-4">
                 <Info className="h-6 w-6 text-[#0043f8] mr-2" />
-                <h2 className="text-2xl font-semibold text-gray-300">About Us</h2>
+                <h2 className="text-2xl font-semibold text-gray-300">
+                  About Us
+                </h2>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Pioneering the Future of <span className="text-[#0043f8]">Artificial Intelligence</span>
+                Pioneering the Future of{" "}
+                <span className="text-[#0043f8]">Artificial Intelligence</span>
               </h3>
               <p className="text-gray-300 mb-6">
-                Founded in 2020, Join Venture AI has been at the forefront of AI innovation, helping businesses across
-                industries harness the power of artificial intelligence to solve complex problems and drive growth.
+                Founded in 2020, Join Venture AI has been at the forefront of AI
+                innovation, helping businesses across industries harness the
+                power of artificial intelligence to solve complex problems and
+                drive growth.
               </p>
               <p className="text-gray-300 mb-8">
-                Our team of AI experts, data scientists, and engineers are passionate about creating cutting-edge
-                solutions that transform how businesses operate and deliver value to their customers.
+                Our team of AI experts, data scientists, and engineers are
+                passionate about creating cutting-edge solutions that transform
+                how businesses operate and deliver value to their customers.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -209,9 +291,12 @@ export default function Home() {
                     <CheckCircle className="h-5 w-5 text-[#0043f8]" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium">Industry-Leading Expertise</h4>
+                    <h4 className="text-white font-medium">
+                      Industry-Leading Expertise
+                    </h4>
                     <p className="text-gray-400">
-                      Our team includes PhDs and industry veterans with decades of combined experience.
+                      Our team includes PhDs and industry veterans with decades
+                      of combined experience.
                     </p>
                   </div>
                 </div>
@@ -221,9 +306,12 @@ export default function Home() {
                     <CheckCircle className="h-5 w-5 text-[#0043f8]" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium">Customized Solutions</h4>
+                    <h4 className="text-white font-medium">
+                      Customized Solutions
+                    </h4>
                     <p className="text-gray-400">
-                      We develop tailored AI solutions that address your specific business challenges.
+                      We develop tailored AI solutions that address your
+                      specific business challenges.
                     </p>
                   </div>
                 </div>
@@ -235,52 +323,54 @@ export default function Home() {
                   <div>
                     <h4 className="text-white font-medium">Proven Results</h4>
                     <p className="text-gray-400">
-                      Our solutions have delivered measurable ROI for businesses across industries.
+                      Our solutions have delivered measurable ROI for businesses
+                      across industries.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">Learn More About Us</Button>
+              <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">
+                Learn More About Us
+              </Button>
             </div>
           </div>
         </div>
       </AnimatedSection>
 
       {/* Services Section */}
-      <AnimatedSection className="py-24 bg-gradient-to-b from-black to-gray-900 relative" id="services">
+      <AnimatedSection
+        className="py-24 bg-gradient-to-b from-black to-gray-900 relative"
+        id="services"
+      >
         <FloatingElements />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Zap className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Our Services</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Our Services
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Comprehensive <span className="text-[#0043f8]">AI Solutions</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Our advanced AI technologies help businesses automate processes, gain insights, and create exceptional
-              customer experiences.
+              Our advanced AI technologies help businesses automate processes,
+              gain insights, and create exceptional customer experiences.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
-              icon={<MessageSquare className="h-10 w-10 text-[#0043f8]" />}
-              title="Natural Language Processing"
-              description="Advanced text analysis and generation capabilities for understanding customer needs and automating responses."
-              features={["Sentiment Analysis", "Text Classification", "Chatbot Development", "Content Generation"]}
-            />
-            <ServiceCard
-              icon={<BarChart className="h-10 w-10 text-[#0043f8]" />}
-              title="Predictive Analytics"
-              description="Forecast trends and behaviors with our machine learning models to make data-driven business decisions."
+              icon={<Code className="h-10 w-10 text-[#0043f8]" />}
+              title="App & Website Development"
+              description="AI-powered application and website development with intelligent features and personalized user experiences."
               features={[
-                "Demand Forecasting",
-                "Risk Assessment",
-                "Customer Behavior Analysis",
-                "Market Trend Prediction",
+                "AI-Driven UX/UI",
+                "Intelligent Web Applications",
+                "Mobile App Development",
+                "Smart Content Management",
               ]}
             />
             <ServiceCard
@@ -295,32 +385,60 @@ export default function Home() {
               ]}
             />
             <ServiceCard
-              icon={<Database className="h-10 w-10 text-[#0043f8]" />}
-              title="Data Processing"
-              description="Transform raw data into actionable insights with our advanced processing algorithms."
-              features={["Data Cleaning", "ETL Pipelines", "Big Data Processing", "Real-time Analytics"]}
-            />
-            <ServiceCard
               icon={<Brain className="h-10 w-10 text-[#0043f8]" />}
               title="AI Integration"
               description="Seamlessly integrate AI capabilities into your existing systems and workflows."
-              features={["API Development", "System Integration", "Legacy System Modernization", "Cloud Migration"]}
+              features={[
+                "API Development",
+                "System Integration",
+                "Legacy System Modernization",
+                "Cloud Migration",
+              ]}
             />
+            <ServiceCard
+              icon={<MessageSquare className="h-10 w-10 text-[#0043f8]" />}
+              title="Natural Language Processing"
+              description="Advanced text analysis and generation capabilities for understanding customer needs and automating responses."
+              features={[
+                "Sentiment Analysis",
+                "Text Classification",
+                "Chatbot Development",
+                "Content Generation",
+              ]}
+            />
+            {/* <ServiceCard
+              icon={<BarChart className="h-10 w-10 text-[#0043f8]" />}
+              title="Predictive Analytics"
+              description="Forecast trends and behaviors with our machine learning models to make data-driven business decisions."
+              features={[
+                "Demand Forecasting",
+                "Risk Assessment",
+                "Customer Behavior Analysis",
+                "Market Trend Prediction",
+              ]}
+            /> */}
+
+            <ServiceCard
+              icon={<Database className="h-10 w-10 text-[#0043f8]" />}
+              title="Data Processing"
+              description="Transform raw data into actionable insights with our advanced processing algorithms."
+              features={[
+                "Data Cleaning",
+                "ETL Pipelines",
+                "Big Data Processing",
+                "Real-time Analytics",
+              ]}
+            />
+
             <ServiceCard
               icon={<Globe className="h-10 w-10 text-[#0043f8]" />}
               title="AI Consulting"
               description="Expert guidance on implementing AI strategies that align with your business goals."
-              features={["AI Readiness Assessment", "Strategy Development", "Implementation Roadmap", "ROI Analysis"]}
-            />
-            <ServiceCard
-              icon={<Code className="h-10 w-10 text-[#0043f8]" />}
-              title="App & Website Development"
-              description="AI-powered application and website development with intelligent features and personalized user experiences."
               features={[
-                "AI-Driven UX/UI",
-                "Intelligent Web Applications",
-                "Mobile App Development",
-                "Smart Content Management",
+                "AI Readiness Assessment",
+                "Strategy Development",
+                "Implementation Roadmap",
+                "ROI Analysis",
               ]}
             />
           </div>
@@ -333,13 +451,16 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Zap className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Key Features</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Key Features
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Why Choose <span className="text-[#0043f8]">Join Venture AI</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Our platform offers cutting-edge capabilities that set us apart from traditional solutions.
+              Our platform offers cutting-edge capabilities that set us apart
+              from traditional solutions.
             </p>
           </div>
 
@@ -361,7 +482,7 @@ export default function Home() {
               title="Real-time Processing"
               description="Process and analyze massive datasets in real-time to make instant, data-driven decisions."
               // image="/Networks.png"
-              image="/18140.jpg"
+              image="/team/data.jpg"
               features={[
                 "Sub-second response times",
                 "Scalable cloud infrastructure",
@@ -394,13 +515,17 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Server className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Technology Stack</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Technology Stack
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Powered by <span className="text-[#0043f8]">Cutting-edge Technology</span>
+              Powered by{" "}
+              <span className="text-[#0043f8]">Cutting-edge Technology</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We leverage the latest technologies across AI, web, mobile, and database platforms to build robust, scalable solutions.
+              We leverage the latest technologies across AI, web, mobile, and
+              database platforms to build robust, scalable solutions.
             </p>
           </div>
 
@@ -423,7 +548,12 @@ export default function Home() {
             <TechnologyCard
               title="Computer Vision"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -443,7 +573,15 @@ export default function Home() {
             <TechnologyCard
               title="Python"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M12 9H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3"></path>
                   <path d="M12 15h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3"></path>
                   <path d="M8 9V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2Z"></path>
@@ -455,7 +593,15 @@ export default function Home() {
             <TechnologyCard
               title="Node.js"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M12 22v-5"></path>
                   <path d="M9 8V5.5a2.5 2.5 0 0 1 5 0V8"></path>
                   <path d="M15 8h.01"></path>
@@ -468,7 +614,15 @@ export default function Home() {
             <TechnologyCard
               title="Next.js"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M12 2H2v10h10V2Z"></path>
                   <path d="M22 12h-8v10h8V12Z"></path>
                   <path d="M12 12H2v10h10V12Z"></path>
@@ -480,7 +634,15 @@ export default function Home() {
             <TechnologyCard
               title="Flutter"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M4.51 7.11 2 4.5 12.005 2l10 2.5-10.005 2.5-7.49.11ZM4.5 9.5v5L7 17v-5l-2.5-2.5ZM4.5 14.5 7 17l5 5 5-5-12.5-2.5ZM12 7l5.005-2.5L12 2 7 4.5 12 7Z"></path>
                   <path d="M17 17V7l-5 5"></path>
                 </svg>
@@ -495,7 +657,15 @@ export default function Home() {
             <TechnologyCard
               title="PostgreSQL"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M12 3v19"></path>
                   <path d="M5 8h14"></path>
                   <path d="M5 16h14"></path>
@@ -507,7 +677,15 @@ export default function Home() {
             <TechnologyCard
               title="MySQL"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M3 2v20"></path>
                   <path d="M21 5H3"></path>
                   <path d="M21 10H3"></path>
@@ -520,7 +698,15 @@ export default function Home() {
             <TechnologyCard
               title="Figma"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
                   <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
                   <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
@@ -533,7 +719,15 @@ export default function Home() {
             <TechnologyCard
               title="Java"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z"></path>
                   <path d="M12 2v20"></path>
                   <path d="M2 12h20"></path>
@@ -544,7 +738,15 @@ export default function Home() {
             <TechnologyCard
               title="Swift"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M20.8 3.3 7.8 16.3c-1.4 1.4-2.2 2.2-2.2 3.2 0 1.7 1.5 3 3.2 3 1 0 1.8-.8 3.2-2.2l13-13c1-1 1-2.5 0-3.5s-2.6-1-4.2.5z"></path>
                   <path d="M10.2 17.8 8.8 19.2"></path>
                   <path d="M13.3 14.7l-1.4 1.4"></path>
@@ -574,13 +776,16 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Clock className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Our Process</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Our Process
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               How We <span className="text-[#0043f8]">Deliver Results</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Our proven methodology ensures successful AI implementation and measurable outcomes.
+              Our proven methodology ensures successful AI implementation and
+              measurable outcomes.
             </p>
           </div>
 
@@ -616,13 +821,17 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Briefcase className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Industry Solutions</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Industry Solutions
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              AI Solutions for <span className="text-[#0043f8]">Every Industry</span>
+              AI Solutions for{" "}
+              <span className="text-[#0043f8]">Every Industry</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We deliver specialized AI solutions tailored to the unique challenges of various industries.
+              We deliver specialized AI solutions tailored to the unique
+              challenges of various industries.
             </p>
           </div>
 
@@ -630,7 +839,12 @@ export default function Home() {
             <IndustryCard
               title="Healthcare"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -640,12 +854,22 @@ export default function Home() {
                 </svg>
               }
               description="Improve patient outcomes, optimize operations, and accelerate research with AI-powered healthcare solutions."
-              useCases={["Diagnostic assistance", "Patient monitoring", "Drug discovery", "Operational efficiency"]}
+              useCases={[
+                "Diagnostic assistance",
+                "Patient monitoring",
+                "Drug discovery",
+                "Operational efficiency",
+              ]}
             />
             <IndustryCard
               title="Finance"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -655,12 +879,22 @@ export default function Home() {
                 </svg>
               }
               description="Enhance risk management, detect fraud, and personalize customer experiences in the financial sector."
-              useCases={["Fraud detection", "Risk assessment", "Algorithmic trading", "Customer insights"]}
+              useCases={[
+                "Fraud detection",
+                "Risk assessment",
+                "Algorithmic trading",
+                "Customer insights",
+              ]}
             />
             <IndustryCard
               title="Retail"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -680,7 +914,12 @@ export default function Home() {
             <IndustryCard
               title="Manufacturing"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -700,17 +939,37 @@ export default function Home() {
             <IndustryCard
               title="Energy"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               }
               description="Optimize energy production, predict equipment failures, and reduce costs with AI-powered solutions."
-              useCases={["Grid optimization", "Predictive maintenance", "Energy forecasting", "Consumption analysis"]}
+              useCases={[
+                "Grid optimization",
+                "Predictive maintenance",
+                "Energy forecasting",
+                "Consumption analysis",
+              ]}
             />
             <IndustryCard
               title="Transportation"
               icon={
-                <svg className="h-12 w-12 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg
+                  className="h-12 w-12 text-[#0043f8]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -720,7 +979,12 @@ export default function Home() {
                 </svg>
               }
               description="Enhance route optimization, predict maintenance needs, and improve safety in transportation."
-              useCases={["Route optimization", "Predictive maintenance", "Safety monitoring", "Demand forecasting"]}
+              useCases={[
+                "Route optimization",
+                "Predictive maintenance",
+                "Safety monitoring",
+                "Demand forecasting",
+              ]}
             />
           </div>
         </div>
@@ -732,13 +996,17 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Shield className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">AI Advantage</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                AI Advantage
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Why AI <span className="text-[#0043f8]">Outperforms</span> Traditional Solutions
+              Why AI <span className="text-[#0043f8]">Outperforms</span>{" "}
+              Traditional Solutions
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              See how our AI-powered approach delivers superior results compared to conventional methods.
+              See how our AI-powered approach delivers superior results compared
+              to conventional methods.
             </p>
           </div>
 
@@ -747,19 +1015,26 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Projects Section */}
-      <AnimatedSection className="py-24 bg-gradient-to-b from-black to-gray-900 relative" id="projects">
+      <AnimatedSection
+        className="py-24 bg-gradient-to-b from-black to-gray-900 relative"
+        id="projects"
+      >
         <FloatingElements />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Briefcase className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Our Projects</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Our Projects
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Transformative <span className="text-[#0043f8]">AI Solutions</span> in Action
+              Transformative{" "}
+              <span className="text-[#0043f8]">AI Solutions</span> in Action
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Explore our portfolio of successful AI implementations across various industries.
+              Explore our portfolio of successful AI implementations across
+              various industries.
             </p>
           </div>
 
@@ -767,127 +1042,67 @@ export default function Home() {
             <ProjectCard
               title="Retail Demand Forecasting"
               description="Developed an AI-powered demand forecasting system for a major retail chain, reducing inventory costs by 23%."
-              image="/placeholder.svg?height=400&width=600"
+              image="/pople.jpg"
               tags={["Predictive Analytics", "Machine Learning", "Retail"]}
             />
             <ProjectCard
               title="Healthcare Diagnostic Assistant"
               description="Created an AI assistant that helps doctors analyze medical images and patient data to improve diagnostic accuracy."
-              image="/placeholder.svg?height=400&width=600"
+              image="/doctor.jpg"
               tags={["Computer Vision", "Healthcare", "Deep Learning"]}
             />
             <ProjectCard
               title="Financial Fraud Detection"
               description="Implemented a real-time fraud detection system for a financial institution, reducing fraud losses by 67%."
-              image="/placeholder.svg?height=400&width=600"
+              image="/scam.jpg"
               tags={["Anomaly Detection", "Finance", "Real-time Processing"]}
             />
             <ProjectCard
               title="Smart Manufacturing Optimization"
               description="Developed an AI system that optimizes manufacturing processes, reducing waste and improving efficiency."
-              image="/placeholder.svg?height=400&width=600"
+              image="/science.jpg"
               tags={["IoT", "Manufacturing", "Optimization"]}
             />
             <ProjectCard
               title="Customer Service Chatbot"
               description="Built an advanced NLP-powered chatbot that handles 80% of customer inquiries automatically."
-              image="/placeholder.svg?height=400&width=600"
+              image="/chatbot.jpg"
               tags={["NLP", "Customer Service", "Chatbot"]}
             />
             <ProjectCard
               title="Personalized E-commerce Recommendations"
               description="Created a recommendation engine that increased average order value by 34% for an e-commerce platform."
-              image="/placeholder.svg?height=400&width=600"
+              image="/digith.jpg"
               tags={["Recommendation Systems", "E-commerce", "Personalization"]}
             />
           </div>
 
-          <div className="text-center mt-12">
-            <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">View All Projects</Button>
-          </div>
+          {/* <div className="text-center mt-12">
+            <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">
+              View All Projects
+            </Button>
+          </div> */}
         </div>
       </AnimatedSection>
 
       {/* Team Section */}
-      <AnimatedSection className="py-24 bg-black relative" id="team">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center mb-4">
-              <Users className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Our Team</h2>
-            </div>
-            <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Meet Our <span className="text-[#0043f8]">AI Experts</span>
-            </h3>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Our team of AI specialists, data scientists, and engineers are passionate about creating innovative
-              solutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <TeamMember
-              name="Dr. Sarah Chen"
-              role="Chief AI Officer"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Ph.D. in Machine Learning with 15+ years of experience in AI research and implementation."
-            />
-            <TeamMember
-              name="Michael Rodriguez"
-              role="Lead Data Scientist"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Expert in predictive modeling and statistical analysis with a background in finance and healthcare."
-            />
-            <TeamMember
-              name="Aisha Patel"
-              role="NLP Specialist"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Specializes in natural language processing and conversational AI systems."
-            />
-            <TeamMember
-              name="David Kim"
-              role="Computer Vision Engineer"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Pioneer in computer vision technologies with expertise in deep learning architectures."
-            />
-            <TeamMember
-              name="Emma Wilson"
-              role="AI Ethics Director"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Ensures our AI solutions are developed and deployed responsibly and ethically."
-            />
-            <TeamMember
-              name="James Thompson"
-              role="ML Operations Lead"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Expert in deploying and scaling machine learning systems in production environments."
-            />
-            <TeamMember
-              name="Sophia Lee"
-              role="Research Scientist"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Focuses on developing novel algorithms and approaches to solve complex AI challenges."
-            />
-            <TeamMember
-              name="Robert Jackson"
-              role="AI Solutions Architect"
-              image="/placeholder.svg?height=300&width=300"
-              bio="Designs comprehensive AI systems that integrate seamlessly with client infrastructure."
-            />
-          </div>
-        </div>
-      </AnimatedSection>
+      <Teams></Teams>
 
       {/* AI Demo Section */}
-      <AnimatedSection className="py-24 bg-gradient-to-b from-black to-gray-900 " id="demo">
+      <AnimatedSection
+        className="py-24 bg-gradient-to-b from-black to-gray-900 "
+        id="demo"
+      >
         <FloatingElements />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Experience Our <span className="text-[#0043f8]">AI</span> in Action
+              Experience Our <span className="text-[#0043f8]">AI</span> in
+              Action
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Try our interactive demo to see how our AI technology can transform your business.
+              Try our interactive demo to see how our AI technology can
+              transform your business.
             </p>
           </div>
 
@@ -902,7 +1117,12 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
-              <svg className="h-6 w-6 text-[#0043f8] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg
+                className="h-6 w-6 text-[#0043f8] mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -910,13 +1130,16 @@ export default function Home() {
                   d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
                 />
               </svg>
-              <h2 className="text-2xl font-semibold text-gray-300">Client Testimonials</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Client Testimonials
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               What Our <span className="text-[#0043f8]">Clients</span> Say
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Hear from businesses that have transformed their operations with our AI solutions.
+              Hear from businesses that have transformed their operations with
+              our AI solutions.
             </p>
           </div>
 
@@ -968,36 +1191,51 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Contact Section */}
-      <AnimatedSection className="py-24 bg-gradient-to-b from-black to-gray-900 relative" id="contact">
+      <AnimatedSection
+        className="py-24 bg-gradient-to-b from-black to-gray-900 relative"
+        id="contact"
+      >
         <FloatingElements />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <Phone className="h-6 w-6 text-[#0043f8] mr-2" />
-              <h2 className="text-2xl font-semibold text-gray-300">Contact Us</h2>
+              <h2 className="text-2xl font-semibold text-gray-300">
+                Contact Us
+              </h2>
             </div>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Get in Touch with Our <span className="text-[#0043f8]">AI Experts</span>
+              Get in Touch with Our{" "}
+              <span className="text-[#0043f8]">AI Experts</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Have questions about our AI solutions? Reach out to us and discover how we can help transform your
-              business.
+              Have questions about our AI solutions? Reach out to us and
+              discover how we can help transform your business.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-gray-900 p-8 rounded-xl border border-gray-800">
-              <h4 className="text-2xl font-bold text-white mb-6">Send Us a Message</h4>
+              <h4 className="text-2xl font-bold text-white mb-6">
+                Send Us a Message
+              </h4>
               <ContactForm />
             </div>
 
             <div>
               <div className="bg-gray-900 p-8 rounded-xl border border-gray-800 mb-8">
-                <h4 className="text-2xl font-bold text-white mb-6">Our Office</h4>
+                <h4 className="text-2xl font-bold text-white mb-6">
+                  Our Office
+                </h4>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="bg-[#0043f8]/10 p-3 rounded-lg mr-4">
-                      <svg className="h-6 w-6 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg
+                        className="h-6 w-6 text-[#0043f8]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1014,13 +1252,21 @@ export default function Home() {
                     </div>
                     <div>
                       <h5 className="text-white font-medium">Address</h5>
-                      <p className="text-gray-400">123 AI Innovation Center, Tech District, San Francisco, CA 94105</p>
+                      <p className="text-gray-400">
+                        123 AI Innovation Center, Tech District, San Francisco,
+                        CA 94105
+                      </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
                     <div className="bg-[#0043f8]/10 p-3 rounded-lg mr-4">
-                      <svg className="h-6 w-6 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg
+                        className="h-6 w-6 text-[#0043f8]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1037,7 +1283,12 @@ export default function Home() {
 
                   <div className="flex items-start">
                     <div className="bg-[#0043f8]/10 p-3 rounded-lg mr-4">
-                      <svg className="h-6 w-6 text-[#0043f8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg
+                        className="h-6 w-6 text-[#0043f8]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1055,7 +1306,9 @@ export default function Home() {
               </div>
 
               <div className="bg-gray-900 p-8 rounded-xl border border-gray-800">
-                <h4 className="text-2xl font-bold text-white mb-6">Business Hours</h4>
+                <h4 className="text-2xl font-bold text-white mb-6">
+                  Business Hours
+                </h4>
                 <ul className="space-y-3">
                   <li className="flex justify-between">
                     <span className="text-gray-400">Monday - Friday:</span>
@@ -1094,8 +1347,6 @@ export default function Home() {
                 <a href="#" className="text-gray-400 hover:text-[#0043f8]">
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4\ */}
-
-
-</main>
+    </main>
   );
 }
