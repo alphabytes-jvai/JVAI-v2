@@ -1152,44 +1152,44 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
-              name="Sarah Johnson"
-              company="TechCorp Inc."
-              image="/placeholder.svg?height=200&width=200"
+              name="maxilef"
+              company="United States."
+              image="/team/maxllef.webp"
               quote="Join Venture AI revolutionized our customer service operations. Their NLP solution reduced response times by 60% while maintaining high customer satisfaction."
               rating={5}
             />
             <TestimonialCard
-              name="Michael Chen"
-              company="Global Retail Solutions"
-              image="/placeholder.svg?height=200&width=200"
+              name="imdjohirulfin01"
+              company="United States"
+              image="/team/imdjohirulfin01.webp"
               quote="The predictive analytics platform developed by Join Venture AI has transformed our inventory management. We've seen a 23% reduction in overstock and a 45% decrease in stockouts."
               rating={5}
             />
             <TestimonialCard
-              name="Emily Rodriguez"
-              company="HealthTech Innovations"
-              image="/placeholder.svg?height=200&width=200"
-              quote="Working with Join Venture AI has been a game-changer for our diagnostic processes. Their AI solutions have improved our accuracy rates by 37%."
+              name="davisdebard"
+              company="United States"
+              image="/team/davisdebard.jpg"
+              quote="I’ve consistently been impressed with Shovon’s expertise and reliable execution. He continues to be a valuable asset to our AI projects, and I look forward to working with him again."
               rating={4}
             />
             <TestimonialCard
-              name="David Kim"
-              company="FinServe Group"
-              image="/placeholder.svg?height=200&width=200"
+              name="miladali08"
+              company="United Arab Emirates"
+              image="/team/client.jpg"
               quote="The fraud detection system implemented by Join Venture AI has saved us millions. Their team's expertise and support throughout the process was exceptional."
               rating={5}
             />
             <TestimonialCard
-              name="Jessica Patel"
-              company="E-Commerce Solutions"
-              image="/placeholder.svg?height=200&width=200"
-              quote="Our conversion rates increased by 28% after implementing Join Venture AI's recommendation engine. The ROI has been incredible."
+              name="albertolorente"
+              company="United States"
+              image="/team/client.webp"
+              quote="A remarkable expert who rapidly understands project goals with little direction. Shows great initiative, goes above and beyond expectations, and consistently delivers top-tier results. I wholeheartedly recommend their skills and commitment!"
               rating={5}
             />
             <TestimonialCard
-              name="Robert Thompson"
-              company="Manufacturing Excellence"
-              image="/placeholder.svg?height=200&width=200"
+              name="bradleymoore"
+              company="United States"
+              image="/team/client2.jpg"
               quote="Join Venture AI helped us optimize our production processes, resulting in a 15% increase in efficiency and significant cost savings."
               rating={4}
             />
@@ -1260,8 +1260,7 @@ export default function Home() {
                     <div>
                       <h5 className="text-white font-medium">Address</h5>
                       <p className="text-gray-400">
-                        123 AI Innovation Center, Tech District, San Francisco,
-                        CA 94105
+                      Police Park, Besides Pizzaburg Restaurant (1st Floor), House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree, Dhaka-1209, Dhaka, Bangladesh
                       </p>
                     </div>
                   </div>
@@ -1284,7 +1283,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h5 className="text-white font-medium">Email</h5>
-                      <p className="text-gray-400">info@joinventureai.com</p>
+                      <p className="text-gray-400">jvai76951@gmail.com</p>
                     </div>
                   </div>
 
@@ -1306,7 +1305,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h5 className="text-white font-medium">Phone</h5>
-                      <p className="text-gray-400">+1 (555) 123-4567</p>
+                      <p className="text-gray-400">+880 1550-723640</p>
                     </div>
                   </div>
                 </div>
