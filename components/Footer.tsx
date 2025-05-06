@@ -1,15 +1,11 @@
 import React from "react";
-import { CgFacebook, CgVoicemail } from "react-icons/cg";
+import { CgFacebook } from "react-icons/cg";
 import {
-  BsInstagram,
   BsLinkedin,
-  BsMailbox,
-  BsTwitter,
-  BsVoicemail,
+
 } from "react-icons/bs";
 import { SlArrowUp } from "react-icons/sl";
 import { IoIosMail } from "react-icons/io";
-import Link from "next/link";
 
 const Footer = () => {
   return (
