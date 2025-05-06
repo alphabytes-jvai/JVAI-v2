@@ -77,7 +77,13 @@ export default function Home() {
               <span className="text-2xl font-bold text-white">
                 Join Venture AI
               </span> */}
-              <Image width={150} height={150} src="/image.png" alt="logo" className="w-[150px]" />
+              <Image
+                width={150}
+                height={150}
+                src="/image.png"
+                alt="logo"
+                className="w-[150px]"
+              />
             </Link>
             <nav className="hidden md:flex space-x-8">
               <a
@@ -274,15 +280,16 @@ export default function Home() {
                 <span className="text-[#0043f8]">Artificial Intelligence</span>
               </h3>
               <p className="text-gray-300 mb-6">
-                Founded in 2020, Join Venture AI has been at the forefront of AI
-                innovation, helping businesses across industries harness the
-                power of artificial intelligence to solve complex problems and
-                drive growth.
+                Welcome to JVAI (Joint Venture AI)--- Where we turn innovative
+                ideas into intelligent digital solutions. We’re a passionate
+                team that builds custom AI chatbots, smart apps, and websites
+                for people and businesses worldwide. Our goal is simple: to make
+                technology work for you in a way that feels easy, natural, and
+                powerful.
               </p>
               <p className="text-gray-300 mb-8">
-                Our team of AI experts, data scientists, and engineers are
-                passionate about creating cutting-edge solutions that transform
-                how businesses operate and deliver value to their customers.
+              Whether you need a chatbot that speaks your customers’ language or a beautiful, functional app or website to grow your business, we’re here to help. We don’t just write code. We listen, understand, and create solutions that solve problems. 
+              At JVAI, we blend innovation with empathy to build technology that truly connects with users. 
               </p>
 
               <div className="space-y-4 mb-8">

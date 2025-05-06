@@ -40,7 +40,7 @@ const Footer = () => {
 
       <div className="z-30 absolute bottom-3 left-0 right-0 px-3 flex items-center justify-between w-full mt-">
         <p className="text-[0.9rem] text-gray-300">
-          © 2021 All Rights Reserved
+          © {new Date().getFullYear()} All Rights Reserved JVAI (Join Venture AI)
         </p>
 
         <SlArrowUp className="p-2 rounded-full border border-gray-300 cursor-pointer text-[2rem] text-gray-300" />
