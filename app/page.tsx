@@ -287,27 +287,16 @@ export default function Home() {
       <AnimatedSection className="py-24 bg-black relative" id="about">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 ">
               <div className="relative">
-                {/* <div className="w-full h-80 md:h-96 bg-gradient-to-br from-[#0043f8]/20 to-[#0043f8]/5 rounded-xl overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Brain className="h-32 w-32 text-[#0043f8] animate-pulse" />
-                  </div>
-                </div> */}
-                {/* <Image
-                  src="/about.jpg"
-                  alt="about"
-                  width={1000}
-                  height={900}
-                  className="rounded-l-xl"
-                ></Image> */}
+              
                 <div className="order-1 lg:order-2 relative">
                   <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-black/50 z-10"></div>
                     <AboutAnimation />
 
                     {/* Floating elements */}
-                    <div className="absolute top-10 left-10 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
+                    <div className="absolute top-10 left-6 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
                       <div className="flex items-center gap-2 mb-2">
                         <Brain className="w-5 h-5 text-blue-400" />
                         <span className="text-sm font-medium text-white">
@@ -320,7 +309,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="absolute bottom-10 right-10 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
+                    <div className="absolute bottom-10 right-6 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
                       <div className="flex items-center gap-2 mb-2">
                         <Globe className="w-5 h-5 text-blue-400" />
                         <span className="text-sm font-medium text-white">
@@ -410,9 +399,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">
+              {/* <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">
                 Learn More About Us
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

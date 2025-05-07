@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Linkedin, Twitter, Mail } from "lucide-react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Linkedin, Twitter, Mail } from "lucide-react";
 
 interface TeamMemberProps {
-  name: string
-  role: string
-  image: string
-  bio: string
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
 }
 
 const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
@@ -25,11 +25,20 @@ const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
       }}
     >
       <div className="relative h-[400px] overflow-hidden group">
-        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="h-full w-full relative">
-          <Image src={image || "/placeholder.svg"} alt={name} height={600} width={300} className="object-cover w-full " />
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="h-full w-full relative"
+        >
+          <Image
+            src={image || "/placeholder.svg"}
+            alt={name}
+            height={600}
+            width={300}
+            className="object-cover w-full "
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         </motion.div>
-
       </div>
 
       <div className="p-6">
@@ -38,7 +47,7 @@ const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
         <p className="text-gray-400">{bio}</p>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default TeamMember
+export default TeamMember;
