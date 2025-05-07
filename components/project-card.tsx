@@ -43,11 +43,6 @@ const ProjectCard = ({ title, description, image, tags }: ProjectCardProps) => {
         </div>
       </div>
 
-      <div className="p-6 pt-0">
-        <motion.div className="text-[#0043f8] font-medium flex items-center" whileHover={{ x: 5 }}>
-          View Project →
-        </motion.div>
-      </div>
     </motion.div>
   )
 }
