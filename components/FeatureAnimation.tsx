@@ -285,7 +285,7 @@ export default function FeatureAnimation() {
 
   return (
     <>
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full " />
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full  " />
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-blue-500 font-bold text-xl">AI Capabilities</div>
       </div>

@@ -587,7 +587,7 @@ export default function Home() {
           </div>
         </div>
       </AnimatedSection> */}
-      <section id="features" className="py-24 relative z-10">
+      <section id="features" className="py-24 relative z-10 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium mb-4">
@@ -604,7 +604,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative">
-              <div className="relative w-full h-[400px]   md:h-[500px] rounded-2xl overflow-hidden border  border-white/10">
+              <div className="relative w-full h-[400px]   md:h-[490px]  rounded-2xl overflow-hidden   ">
                 <FeatureAnimation />
               </div>
             </div>

@@ -30,21 +30,6 @@ const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         </motion.div>
 
-        <motion.div
-          className="absolute bottom-0 left-0 right-0 p-4 flex justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-opacity"
-          initial={{ y: 20 }}
-          whileHover={{ y: 0 }}
-        >
-          <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-[#0043f8]/80 transition-colors">
-            <Linkedin className="h-5 w-5 text-white" />
-          </a>
-          <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-[#0043f8]/80 transition-colors">
-            <Twitter className="h-5 w-5 text-white" />
-          </a>
-          <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-[#0043f8]/80 transition-colors">
-            <Mail className="h-5 w-5 text-white" />
-          </a>
-        </motion.div>
       </div>
 
       <div className="p-6">
