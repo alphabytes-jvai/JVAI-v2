@@ -1216,11 +1216,7 @@ export default function Home() {
             />
           </div>
 
-          {/* <div className="text-center mt-12">
-            <Button className="bg-[#0043f8] hover:bg-[#0036c5] text-white">
-              View All Projects
-            </Button>
-          </div> */}
+    
         </div>
       </AnimatedSection>
 
