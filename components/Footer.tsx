@@ -1,9 +1,6 @@
 import React from "react";
 import { CgFacebook } from "react-icons/cg";
-import {
-  BsLinkedin,
-
-} from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { SlArrowUp } from "react-icons/sl";
 import { IoIosMail } from "react-icons/io";
 
@@ -14,14 +11,13 @@ const Footer = () => {
         <img src="/image.png" alt="logo" className="w-[150px]" />
 
         <div className="w-4/5 sm:w-2/5 mx-auto text-center">
-  <p className="text-[0.9rem] text-gray-400 text-center">
-    Experienced web designer and developer with strong expertise in
-    building modern, high-quality digital solutions. At JVAI, they focus
-    on crafting scalable, user-friendly web experiences backed by solid
-    development practices and a passion for innovation.
-  </p>
-</div>
-
+          <p className="text-[0.9rem] text-gray-400 text-center">
+            Experienced web designer and developer with strong expertise in
+            building modern, high-quality digital solutions. At JVAI, they focus
+            on crafting scalable, user-friendly web experiences backed by solid
+            development practices and a passion for innovation.
+          </p>
+        </div>
 
         <button className="py-3 px-6 rounded-full bg-[#3B9DF8] text-white">
           Contact Us
@@ -63,15 +59,15 @@ const Footer = () => {
 
       {/* Background images */}
       <img
-        src="https://i.ibb.co/zNk7XT4/Rectangle-97.png"
+        src="/team/image.svg"
         alt="background"
         className="absolute bottom-[20px] sm:bottom-0 left-0 right-0 z-10 rounded-b-xl w-full"
       />
-      <img
+      {/* <img
         src="https://i.ibb.co/0mp2FwS/Rectangle-95.png"
         alt="background"
         className="absolute bottom-0 left-0 right-0 z-10 rounded-b-xl w-full"
-      />
+      /> */}
     </footer>
   );
 };

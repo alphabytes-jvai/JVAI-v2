@@ -161,7 +161,7 @@ export default function Home() {
               {/* <Brain className="h-12 w-12 mr-2 text-[#0043f8] animate-pulse" /> */}
               {/* <Image width={150} height={150} src="/image.png" alt="logo" className="w-[200px] h-[100px]" /> */}
 
-              <h1 className="text-4xl md:text-6xl font-bold">
+              <h1 className="text-4xl md:text-7xl font-bold">
                 Join Venture <span className="text-[#0043f8]">AI</span>
               </h1>
             </div>
@@ -280,7 +280,7 @@ export default function Home() {
                 <span className="text-[#0043f8]">Artificial Intelligence</span>
               </h3>
               <p className="text-gray-300 mb-6">
-                Welcome to JVAI (Joint Venture AI)--- Where we turn innovative
+                Welcome to JVAI (Join Venture AI)--- Where we turn innovative
                 ideas into intelligent digital solutions. We’re a passionate
                 team that builds custom AI chatbots, smart apps, and websites
                 for people and businesses worldwide. Our goal is simple: to make
