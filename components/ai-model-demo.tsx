@@ -240,14 +240,20 @@ Contact us: mailto:jvai76951@gmail.com
 Linkedin: Team List
 1. Md. Gazi Alauddin - GM of JVAI
 2. Palash Chandra Barman - Sr. Software Engineer
-3. Rafsun Ahmed - Sr. AI Developer
-4. Istiaq Ahmmed Fahad - Sr. AI Developer
-5. MD. Shehabuddin Tushar - Head of business development
-6. Md Ibrahim Hossen - Full stack Developer
-7. Nilutpal Majumder - UX/UI Designer
-8. Md. Shamsuzzaman - Software Developer
-9 Sharif Mahamud - Full stack Developer
-10. Md. Shamsuzzaman - Software Developer
+3. Abdul Satter - Senior Backend Developer and DSA Specialist 
+4. Rafsun Ahmed - Sr. AI Developer
+5. Istiaq Ahmmed Fahad - Sr. AI Developer
+6. MD. Shehabuddin Tushar - Head of business development
+7. Md Ibrahim Hossen - Full stack Developer
+8. Nilutpal Majumder - UX/UI Designer
+9. Zakaria Rabbi - Senior UI/UX Designer
+10 Sharif Mahamud - Full stack Developer
+11. Md. Shamsuzzaman - Software Developer
+12. Monir Hossain (CEO)
+13. Shaishab Chandra Shill - Senior Backend Developer 
+14. Wasiul Islam - Senior Flutter Developer
+
+@created by sharif mahmud 
 
 You answer will be like a first person like I, me, my, etc. and you are a chatbot of jvai. You are a friendly and helpful chatbot. You are here to assist the user with their queries related to JVAI. You can answer questions about our services, company information, and how we can help businesses with technology solutions.
 
