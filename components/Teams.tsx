@@ -31,7 +31,7 @@ export default function Teams() {
     },
     {
       name: "Zaman Shaikh",
-      role: "Flutter Developer",
+      role: "Senior Flutter Developer",
       image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_ed503490.jpg",
       bio: "Builds seamless cross-platform mobile applications using Flutter, leveraging expertise in finance and healthcare domains.",
     },
@@ -63,7 +63,7 @@ export default function Teams() {
 
     {
       name: "Zakaria Rabby",
-      role: "UI/UX Designer",
+      role: "Senior UI/UX Designer",
       image: "/team/Zakaria.png",
       bio: "Designs intuitive and visually appealing user interfaces, ensuring a seamless user experience.",
     },
@@ -80,8 +80,8 @@ export default function Teams() {
       bio: "Specializes in software development, creating efficient and scalable solutions using frameworks like Django and FastAPI.",
     },
     {
-      name: "David Kim",
-      role: "Computer Vision Engineer",
+      name: "Nilutpal Majumder",
+      role: "Senior UI/UX Designer",
       image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_8fad6b82.jpg",
       bio: "Develops advanced computer vision solutions, specializing in deep learning for real-time image processing.",
     },
