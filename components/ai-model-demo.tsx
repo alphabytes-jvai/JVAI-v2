@@ -316,7 +316,7 @@ User question: ${input}`,
     >
       <div className="p-4 bg-gray-800 flex items-center">
         <Brain className="h-6 w-6 text-[#0043f8] mr-2" />
-        <h3 className="text-white font-medium">Joint Venture AI Assistant</h3>
+        <h3 className="text-white font-medium">Join Venture AI Assistant</h3>
       </div>
 
       <div className="h-80 overflow-y-auto p-4 flex flex-col gap-4">
