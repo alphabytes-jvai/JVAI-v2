@@ -56,7 +56,7 @@ export default function Teams() {
     },
     {
       name: "Abdull Satter",
-      role: "Backend Developer",
+      role: "Senior Backend Developer & DSA Specialist",
       image: "/team/satter.png",
       bio: " Has a strong technical background, excellent problem-solving skills, and a deep understanding of databases and server-side languages.",
     },
