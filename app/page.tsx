@@ -44,6 +44,9 @@ import Image from "next/image";
 import Teams from "@/components/Teams";
 import React from "react";
 import Link from "next/link";
+import AnimatedCircles from "@/components/AnimatedCircles";
+import AboutAnimation from "@/components/AboutAnimation";
+import FeatureAnimation from "@/components/FeatureAnimation";
 
 export default function Home() {
   const textVariants = {
@@ -154,11 +157,11 @@ export default function Home() {
         </div>
       </header>
       {/* Enhanced Hero Section with Advanced Animation */}
-      {/* <section className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden pt-16">
+      <section className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden pt-16">
         <ParticleBackground />
         <HeroAnimation />
         <div className="container mx-auto px-4 py-24 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          {/* <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
 
               <h1 className="text-4xl md:text-7xl font-bold">
@@ -183,76 +186,44 @@ export default function Home() {
              
             </div>
 
-          </div>
-        </div>
-        <a
-          href="#team"
-          className="absolute bottom-10 cursor-pointer left-0 right-0 flex justify-center animate-bounce"
-        >
-          <ChevronDown className="h-8 w-8 text-white/70" />
-        </a>
-      </section> */}
+          </div> */}
+          <div className="space-y-8  max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium">
+              <Sparkles className="w-4 h-4 mr-2" />
+              Next-Generation AI Solutions
+            </div>
 
-      {/* <div className=" h-screen bg-gradient-to-b from-black to-[#050816] text-white overflow-hidden"> */}
-  
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              Join{" "}
+              <span className="relative inline-block">
+                Venture
+                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-transparent"></span>
+              </span>{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+                AI
+              </span>
+            </h1>
 
-      {/* Hero Section */}
-      <main className="relative mt-14">
-        {/* Background Elements */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjMjA0N0E1IiBvcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNMTggMGExIDEgMCAwMTEgMXYxNmExIDEgMCAwMS0xIDFIMmExIDEgMCAwMS0xLTFWMWExIDEgMCAwMTEtMWgxNnpNNyA2YTEgMSAwIDEwMCAyIDEgMSAwIDAwMC0yem00IDBhMSAxIDAgMTEwIDIgMSAxIDAgMDEwLTJ6TTcgMTBhMSAxIDAgMTEwIDIgMSAxIDAgMDEwLTJ6bTQgMGExIDEgMCAxMTAgMiAxIDEgMCAwMTAtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+            <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
+              Transforming businesses with intelligent AI solutions
+            </h2>
 
-          {/* Gradient Orbs */}
-          <div className="absolute top-20 left-1/4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-[80px] opacity-10 animate-blob"></div>
-          <div className="absolute top-40 right-1/4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-[80px] opacity-10 animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-40 left-1/3 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-[80px] opacity-10 animate-blob animation-delay-4000"></div>
+            <p className="text-gray-400  text-lg">
+              Leverage the power of artificial intelligence to drive innovation,
+              efficiency, and growth for your business with our cutting-edge
+              technology platform.
+            </p>
 
-          {/* Grid Lines */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e520_1px,transparent_1px),linear-gradient(to_bottom,#4f46e520_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-        </div>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link
+                href="#about"
+                className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-all transform hover:translate-y-[-2px] hover:shadow-lg hover:shadow-blue-500/20"
+              >
+                Explore Now
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
 
-        {/* Animated Circles Background */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          {/* <AnimatedCircles/> */}
-        </div>
-
-        {/* Hero Content */}
-        <div className="container mx-auto px-4 pt-16 md:pt-24 lg:pt-32 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Next-Generation AI Solutions
-              </div>
-
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                Join{" "}
-                <span className="relative inline-block">
-                  Venture
-                  <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-transparent"></span>
-                </span>{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">AI</span>
-              </h1>
-
-              <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
-                Transforming businesses with intelligent AI solutions
-              </h2>
-
-              <p className="text-gray-400 max-w-xl text-lg">
-                Leverage the power of artificial intelligence to drive innovation, efficiency, and growth for your
-                business with our cutting-edge technology platform.
-              </p>
-
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="#explore"
-                  className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-all transform hover:translate-y-[-2px] hover:shadow-lg hover:shadow-blue-500/20"
-                >
-                  Explore Now
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-
-                {/* <Link
+              {/* <Link
                   href="#demo"
                   className="group inline-flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 font-medium py-3 px-6 rounded-md transition-all"
                 >
@@ -261,279 +232,21 @@ export default function Home() {
                     <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link> */}
-              </div>
-
-              <div className="flex items-center gap-4 text-sm text-gray-400">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full border-2 border-black bg-gradient-to-br from-gray-700 to-gray-900"
-                    ></div>
-                  ))}
-                </div>
-                <span>Trusted by 500+ companies worldwide</span>
-              </div>
-            </div>
-
-            <div className="relative">
-              {/* 3D-like AI Visualization with Orbital Circles */}
-              <div className="relative w-full aspect-square max-w-md mx-auto">
-                {/* Orbital rings */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-64 h-64 rounded-full border border-blue-500/10 animate-spin-slow"></div>
-                  <div className="w-80 h-80 rounded-full border border-blue-500/5 animate-reverse-spin"></div>
-                  <div className="w-96 h-96 rounded-full border border-blue-500/5 animate-spin-slow animation-delay-2000"></div>
-                </div>
-
-                {/* Rotating dots on orbits */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-64 h-64">
-                    <div className="absolute top-0 left-1/2 -translate-x-1.5 w-3 h-3 rounded-full bg-blue-500 animate-orbit"></div>
-                    <div className="absolute top-1/2 right-0 -translate-y-1.5 w-3 h-3 rounded-full bg-blue-400 animate-orbit animation-delay-2000"></div>
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1.5 w-3 h-3 rounded-full bg-blue-300 animate-orbit animation-delay-4000"></div>
-                    <div className="absolute top-1/2 left-0 -translate-y-1.5 w-3 h-3 rounded-full bg-blue-600 animate-orbit animation-delay-6000"></div>
-                  </div>
-                </div>
-
-                {/* Pulsing circles */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 w-40 h-40 rounded-full border-4 border-blue-500/20 animate-ping-slow opacity-0"></div>
-                    <div className="absolute inset-0 w-40 h-40 rounded-full border-4 border-blue-500/20 animate-ping-slow animation-delay-2000 opacity-0"></div>
-                    <div className="absolute inset-0 w-40 h-40 rounded-full border-4 border-blue-500/20 animate-ping-slow animation-delay-4000 opacity-0"></div>
-                  </div>
-                </div>
-
-                {/* Glowing orb */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-40 h-40">
-                    <div className="absolute inset-0 rounded-full bg-blue-500/20 animate-pulse"></div>
-                    <div className="absolute inset-2 rounded-full bg-blue-500/30 animate-pulse animation-delay-1000"></div>
-                    <div className="absolute inset-4 rounded-full bg-blue-500/40 animate-pulse animation-delay-2000"></div>
-                    <div className="absolute inset-6 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 blur-sm"></div>
-                  </div>
-                </div>
-
-                {/* Connection lines */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
-                  <g className="opacity-30">
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="20"
-                      y2="20"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="80"
-                      y2="20"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-500"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="80"
-                      y2="80"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-1000"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="20"
-                      y2="80"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-1500"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="50"
-                      y2="10"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-2000"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="90"
-                      y2="50"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-2500"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="50"
-                      y2="90"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-3000"
-                    />
-                    <line
-                      x1="50"
-                      y1="50"
-                      x2="10"
-                      y2="50"
-                      stroke="url(#blue-gradient)"
-                      strokeWidth="0.5"
-                      className="animate-draw-line animation-delay-3500"
-                    />
-                  </g>
-
-                  {/* Nodes */}
-                  <circle cx="20" cy="20" r="3" fill="#3B82F6" className="animate-pulse" />
-                  <circle cx="80" cy="20" r="3" fill="#3B82F6" className="animate-pulse animation-delay-500" />
-                  <circle cx="80" cy="80" r="3" fill="#3B82F6" className="animate-pulse animation-delay-1000" />
-                  <circle cx="20" cy="80" r="3" fill="#3B82F6" className="animate-pulse animation-delay-1500" />
-                  <circle cx="50" cy="10" r="3" fill="#3B82F6" className="animate-pulse animation-delay-2000" />
-                  <circle cx="90" cy="50" r="3" fill="#3B82F6" className="animate-pulse animation-delay-2500" />
-                  <circle cx="50" cy="90" r="3" fill="#3B82F6" className="animate-pulse animation-delay-3000" />
-                  <circle cx="10" cy="50" r="3" fill="#3B82F6" className="animate-pulse animation-delay-3500" />
-
-                  {/* Gradient definition */}
-                  <defs>
-                    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.8" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-
-              {/* Circular progress indicators */}
-              <div className="absolute -top-10 -left-10 w-40 h-40">
-                <div className="relative w-full h-full">
-                  <svg className="w-full h-full" viewBox="0 0 100 100">
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#1f2937"
-                      strokeWidth="8"
-                      className="opacity-30"
-                    />
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#3B82F6"
-                      strokeWidth="8"
-                      strokeDasharray="283"
-                      strokeDashoffset="70"
-                      className="animate-progress-75 origin-center -rotate-90"
-                    />
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center flex-col">
-                    <Brain className="w-6 h-6 text-blue-400 mb-1" />
-                    <span className="text-sm font-medium text-gray-300">Neural Networks</span>
-                    <span className="text-xl font-bold text-blue-400">75%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-5 -right-5 w-40 h-40">
-                <div className="relative w-full h-full">
-                  <svg className="w-full h-full" viewBox="0 0 100 100">
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#1f2937"
-                      strokeWidth="8"
-                      className="opacity-30"
-                    />
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#3B82F6"
-                      strokeWidth="8"
-                      strokeDasharray="283"
-                      strokeDashoffset="113"
-                      className="animate-progress-60 origin-center -rotate-90"
-                    />
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center flex-col">
-                    <BarChart3 className="w-6 h-6 text-blue-400 mb-1" />
-                    <span className="text-sm font-medium text-gray-300">Analytics</span>
-                    <span className="text-xl font-bold text-blue-400">60%</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+        <a
+          href="#team"
+          className="absolute bottom-10 cursor-pointer left-0 right-0 flex justify-center animate-bounce"
+        >
+          <ChevronDown className="h-8 w-8 text-white/70" />
+        </a>
+      </section>
 
-        {/* Features Section */}
-        {/* <div className="container mx-auto px-4 py-24 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Powerful AI <span className="text-blue-500">Features</span>
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Discover how our AI solutions can transform your business operations and drive growth
-            </p>
-          </div>
+      {/* <div className=" h-screen bg-gradient-to-b from-black to-[#050816] text-white overflow-hidden"> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Brain className="w-6 h-6" />,
-                title: "Machine Learning",
-                description:
-                  "Advanced algorithms that learn from your data to make intelligent predictions and decisions.",
-              },
-              {
-                icon: <Zap className="w-6 h-6" />,
-                title: "Process Automation",
-                description: "Streamline operations by automating repetitive tasks with intelligent workflows.",
-              },
-              {
-                icon: <BarChart3 className="w-6 h-6" />,
-                title: "Predictive Analytics",
-                description: "Forecast trends and outcomes with precision using historical and real-time data.",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="relative group bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 rounded-xl p-6 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5"
-              >
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl opacity-0 group-hover:opacity-20 transition duration-300 blur"></div>
-                <div className="relative">
-                  <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
+      {/* </div> */}
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-          <ChevronDown className="w-6 h-6 text-gray-400" />
-        </div>
-      </main>
-    {/* </div> */}
-   
       {/* Key Stats Section - Redesigned */}
       <section className="py-16 bg-black relative">
         <div className="container mx-auto px-4">
@@ -581,13 +294,46 @@ export default function Home() {
                     <Brain className="h-32 w-32 text-[#0043f8] animate-pulse" />
                   </div>
                 </div> */}
-                <Image
+                {/* <Image
                   src="/about.jpg"
                   alt="about"
                   width={1000}
                   height={900}
                   className="rounded-l-xl"
-                ></Image>
+                ></Image> */}
+                <div className="order-1 lg:order-2 relative">
+                  <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-black/50 z-10"></div>
+                    <AboutAnimation />
+
+                    {/* Floating elements */}
+                    <div className="absolute top-10 left-10 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Brain className="w-5 h-5 text-blue-400" />
+                        <span className="text-sm font-medium text-white">
+                          AI Research
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-300">
+                        Pioneering next-gen neural networks and machine learning
+                        algorithms
+                      </div>
+                    </div>
+
+                    <div className="absolute bottom-10 right-10 z-20 bg-black/60 backdrop-blur-sm p-4 rounded-lg border border-white/10 max-w-[200px]">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Globe className="w-5 h-5 text-blue-400" />
+                        <span className="text-sm font-medium text-white">
+                          Global Impact
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-300">
+                        Transforming businesses across 40+ countries with AI
+                        solutions
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#0043f8]/10 rounded-full blur-2xl"></div>
               </div>
             </div>
@@ -611,8 +357,12 @@ export default function Home() {
                 powerful.
               </p>
               <p className="text-gray-300 mb-8">
-              Whether you need a chatbot that speaks your customers’ language or a beautiful, functional app or website to grow your business, we’re here to help. We don’t just write code. We listen, understand, and create solutions that solve problems. 
-              At JVAI, we blend innovation with empathy to build technology that truly connects with users. 
+                Whether you need a chatbot that speaks your customers’ language
+                or a beautiful, functional app or website to grow your business,
+                we’re here to help. We don’t just write code. We listen,
+                understand, and create solutions that solve problems. At JVAI,
+                we blend innovation with empathy to build technology that truly
+                connects with users.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -776,7 +526,7 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Key Features Section */}
-      <AnimatedSection className="py-24 bg-black relative" id="features">
+      {/* <AnimatedSection className="py-24 bg-black relative" id="features">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
@@ -836,7 +586,77 @@ export default function Home() {
             />
           </div>
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
+      <section id="features" className="py-24 relative z-10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium mb-4">
+              Our Capabilities
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Advanced AI <span className="text-blue-500">Features</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Discover how our comprehensive suite of AI solutions can transform
+              your business operations and drive sustainable growth
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            <div className="relative">
+              <div className="relative w-full h-[400px]   md:h-[500px] rounded-2xl overflow-hidden border  border-white/10">
+                <FeatureAnimation />
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              {[
+                {
+                  icon: <Brain className="w-6 h-6" />,
+                  title: "Advanced Neural Networks",
+                  description:
+                    "Our deep learning models adapt and evolve with your data, providing increasingly accurate insights and predictions over time.",
+                },
+                {
+                  icon: <Cpu className="w-6 h-6" />,
+                  title: "Natural Language Processing",
+                  description:
+                    "Understand and analyze human language with sophisticated NLP algorithms that extract meaning from text and speech.",
+                },
+                {
+                  icon: <Shield className="w-6 h-6" />,
+                  title: "Secure AI Infrastructure",
+                  description:
+                    "Enterprise-grade security protocols protect your data while our AI systems work to deliver valuable insights.",
+                },
+                {
+                  icon: <Code className="w-6 h-6" />,
+                  title: "Custom AI Development",
+                  description:
+                    "Tailored AI solutions designed specifically for your industry and business requirements.",
+                },
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-400">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+         
+        </div>
+      </section>
 
       {/* Technology Stack Section */}
       <AnimatedSection className="py-24 bg-gradient-to-b from-black to-gray-900 relative">
@@ -1583,7 +1403,9 @@ export default function Home() {
                     <div>
                       <h5 className="text-white font-medium">Address</h5>
                       <p className="text-gray-400">
-                      Police Park, Besides Pizzaburg Restaurant (1st Floor), House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree, Dhaka-1209, Dhaka, Bangladesh
+                        Police Park, Besides Pizzaburg Restaurant (1st Floor),
+                        House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree,
+                        Dhaka-1209, Dhaka, Bangladesh
                       </p>
                     </div>
                   </div>
