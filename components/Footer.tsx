@@ -122,7 +122,7 @@ const Footer = () => {
                 <li className="text-gray-400">CA 94105</li>
                 <li className="text-gray-400">info@joinventureai.com</li>
                 <li className="text-gray-400">+1 (555) 123-4567</li> */}
-                <li>Police Park, Besides Pizzaburg Restaurant (1st Floor), House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree, Dhaka-1209, Dhaka, Bangladesh</li>
+                <li className="text-gray-400 ">Police Park, Besides Pizzaburg Restaurant (1st Floor), House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree, Dhaka-1209, Dhaka, Bangladesh</li>
               </ul>
             </div>
           </div>
