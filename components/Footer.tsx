@@ -1,7 +1,6 @@
 import React from "react";
 import { CgFacebook } from "react-icons/cg";
 import { BsLinkedin } from "react-icons/bs";
-import { SlArrowUp } from "react-icons/sl";
 import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
@@ -57,27 +56,27 @@ const Footer = () => {
               <h4 className="text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#features" className="text-gray-400 hover:text-[#0043f8]">
                     Natural Language Processing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#features" className="text-gray-400 hover:text-[#0043f8]">
                     Predictive Analytics
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#features" className="text-gray-400 hover:text-[#0043f8]">
                     Custom AI Development
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#features" className="text-gray-400 hover:text-[#0043f8]">
                     Data Processing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#features" className="text-gray-400 hover:text-[#0043f8]">
                     AI Integration
                   </a>
                 </li>
@@ -88,28 +87,28 @@ const Footer = () => {
               <h4 className="text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#about" className="text-gray-400 hover:text-[#0043f8]">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
+                  <a href="#team" className="text-gray-400 hover:text-[#0043f8]">
                     Our Team
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
-                    Case Studies
+                  <a href="#testimonials" className="text-gray-400 hover:text-[#0043f8]">
+                    Our Clients
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
-                    Careers
+                  <a href="#projects" className="text-gray-400 hover:text-[#0043f8]">
+                    Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#0043f8]">
-                    News & Blog
+                  <a href="#services" className="text-gray-400 hover:text-[#0043f8]">
+                    Service
                   </a>
                 </li>
               </ul>
@@ -118,11 +117,12 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li className="text-gray-400">123 AI Innovation Center</li>
+                {/* <li className="text-gray-400">123 AI Innovation Center</li>
                 <li className="text-gray-400">Tech District, San Francisco</li>
                 <li className="text-gray-400">CA 94105</li>
                 <li className="text-gray-400">info@joinventureai.com</li>
-                <li className="text-gray-400">+1 (555) 123-4567</li>
+                <li className="text-gray-400">+1 (555) 123-4567</li> */}
+                <li>Police Park, Besides Pizzaburg Restaurant (1st Floor), House 180/6/23/CAD, Road 14, Block C, Rampura, Banasree, Dhaka-1209, Dhaka, Bangladesh</li>
               </ul>
             </div>
           </div>
