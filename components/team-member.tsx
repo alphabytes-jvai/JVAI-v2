@@ -21,7 +21,7 @@ const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => {
       viewport={{ once: true }}
       whileHover={{
         y: -10,
-        
+        boxShadow: "0 5x 5px 5px rgba(0, 67, 248, 0.3)",
       }}
     >
       <div className="relative h-[400px] overflow-hidden group">
