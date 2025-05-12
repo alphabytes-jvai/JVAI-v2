@@ -11,81 +11,80 @@ import TeamMember from "./team-member";
 export default function Teams() {
   // Team members data
   const teamMembers = [
-    {
-      name: "Md. Gazi Alauddin",
-      role: "GM of JVAI",
-      image: "/team/WhatsApp Image 2025-05-05 at 18.25.48_cafe20e3.jpg",
-      bio: "Leads JVAI with a Ph.D. in Machine Learning and over 15 years steering innovative AI research and strategic implementations.",
-    },
-    {
-      name: "Palash Chandra Barman",
-      role: "Sr. Software Engineer",
-      image: "/team/palash.jpg",
-      bio: "A Senior Software Engineer is a highly experienced software development professional who leads the design, development, and maintenance of software systems",
-    },
-    {
-      name: "Rafsun Ahmed",
-      role: "Ai Engineer",
-      image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_dc798f8c.jpg",
-      bio: "Designs and optimizes natural language processing systems, enhancing conversational AI capabilities.",
-    },
-    {
-      name: "Zaman Shaikh",
-      role: "Senior Flutter Developer",
-      image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_ed503490.jpg",
-      bio: "Builds seamless cross-platform mobile applications using Flutter, leveraging expertise in finance and healthcare domains.",
-    },
+  {
+    name: "Md. Gazi Alauddin",
+    role: "GM of JVAI",
+    image: "/team/WhatsApp Image 2025-05-05 at 18.25.48_cafe20e3.jpg",
+    bio: "Leads JVAI with a Ph.D. in Machine Learning and over 15 years steering innovative AI research and strategic implementations.",
+  },
+  {
+    name: "Palash Chandra Barman",
+    role: "Sr. Software Engineer",
+    image: "/team/palash.jpg",
+    bio: "A Senior Software Engineer is a highly experienced software development professional who leads the design, development, and maintenance of software systems.",
+  },
+  {
+    name: "Rafsun Ahmed",
+    role: "AI Engineer",
+    image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_dc798f8c.jpg",
+    bio: "Specializes in the design and optimization of Natural Language Processing (NLP) systems, driving advancements in conversational AI and machine learning models.",
+  },
+  {
+    name: "Zaman Shaikh",
+    role: "Flutter Developer",
+    image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_ed503490.jpg",
+    bio: "Develops high-performance, cross-platform mobile applications with a focus on delivering robust solutions in industries like finance and healthcare using Flutter.",
+  },
+  {
+    name: "Saidul Mursalin Khan",
+    role: "AI Engineer",
+    image: "/team/image.png",
+    bio: "Leads the development and implementation of ethical AI technologies, focusing on responsible and inclusive AI solutions for global impact.",
+  },
+  {
+    name: "Mehedi Hasan",
+    role: "Python Developer",
+    image: "/team/mehedi.jpg",
+    bio: "A skilled Python developer, known for creating scalable backend solutions and working with frameworks such as Django and FastAPI to deliver robust applications.",
+  },
+  {
+    name: "Rifat Hossain",
+    role: "Senior Backend Engineer",
+    image: "/team/rifatdb.jpeg",
+    bio: "An experienced backend engineer with deep expertise in designing and optimizing server-side systems, databases, and scalable architectures.",
+  },
+  {
+    name: "Abdull Satter",
+    role: "Backend Developer",
+    image: "/team/satter.png",
+    bio: "Focuses on building scalable, high-performance backend systems, bringing advanced expertise in algorithms, server-side technologies, and complex database management.",
+  },
+  {
+    name: "Zakaria Rabby",
+    role: "UI/UX Designer",
+    image: "/team/Zakaria.png",
+    bio: "Creates user-centered designs, transforming complex functionality into intuitive and aesthetically pleasing interfaces that enhance user engagement and experience.",
+  },
+  {
+    name: "Sharif Mahamud",
+    role: "Frontend Developer",
+    image: "/team/155249475.jpg",
+    bio: "A front-end developer specializing in responsive web design, ensuring seamless user interfaces using technologies such as HTML, CSS, JavaScript, and Next.js.",
+  },
+  {
+    name: "Rakibul Hossain",
+    role: "Software Engineer",
+    image: "/team/rikb.png",
+    bio: "Expert in creating software solutions with a focus on scalability and performance, working across various frameworks including Django and FastAPI.",
+  },
+  {
+    name: "Nilutpal Majumder",
+    role: "Senior UI/UX Designer",
+    image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_8fad6b82.jpg",
+    bio: "Specializes in advanced computer vision and deep learning techniques, developing real-time image processing solutions for dynamic user interfaces.",
+  },
+];
 
-    {
-      name: "Saidul Mursalin Khan",
-      role: "AI Specialist",
-      image: "/team/image.png",
-      bio: "Champions ethical AI development, ensuring responsible and inclusive deployment of AI technologies.",
-    },
-    {
-      name: "Mehedi Hasan",
-      role: "Python Developer",
-      image: "/team/mehedi.jpg",
-      bio: "Specializes in Python development, creating efficient and scalable solutions using frameworks like Django and FastAPI.",
-    },
-    {
-      name: "Rifat Hossain",
-      role: "Senior Backend Engineer",
-      image: "/team/rifatdb.jpeg",
-      bio: "A good Senior Backend Engineer has a strong technical background, excellent problem-solving skills, and a deep understanding of databases and server-side languages",
-    },
-    {
-      name: "Abdull Satter",
-      role: "Senior Backend Developer & DSA Specialist",
-      image: "/team/satter.png",
-      bio: " Experienced in building scalable backend systems with deep expertise in databases, server-side technologies, and algorithmic problem-solving.",
-    },
-
-    {
-      name: "Zakaria Rabby",
-      role: "Senior UI/UX Designer",
-      image: "/team/Zakaria.png",
-      bio: "Designs intuitive and visually appealing user interfaces, ensuring a seamless user experience.",
-    },
-    {
-      name: "Sharif Mahamud",
-      role: "Frontend Developer",
-      image: "/team/155249475.jpg",
-      bio: "Specializes in front-end development, creating engaging and responsive user interfaces using HTML, CSS, JavaScript, and frameworks like Next.js.",
-    },
-    {
-      name: "Rakibul Hossain",
-      role: "Software Engineer",
-      image: "/team/rikb.png",
-      bio: "Specializes in software development, creating efficient and scalable solutions using frameworks like Django and FastAPI.",
-    },
-    {
-      name: "Nilutpal Majumder",
-      role: "Senior UI/UX Designer",
-      image: "/team/WhatsApp Image 2025-05-05 at 18.25.47_8fad6b82.jpg",
-      bio: "Develops advanced computer vision solutions, specializing in deep learning for real-time image processing.",
-    },
-  ];
 
   // Calculate total pages
   const itemsPerPage = 3;
