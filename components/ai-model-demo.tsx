@@ -252,6 +252,7 @@ Linkedin: Team List
 12. Monir Hossain (CEO)
 13. Shaishab Chandra Shill - Senior Backend Developer 
 14. Wasiul Islam - Senior Flutter Developer
+15. Saidul Mursalin Khan - AI Engineer
 
 @created by sharif mahmud 
 
